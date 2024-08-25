@@ -129,18 +129,21 @@ Ask questions about the uploaded documents. The system will retrieve relevant in
 
 ## Assumptions
 
-Azure OpenAI Setup:
+### Azure OpenAI Setup:
 
-It is assumed that you have already deployed a model (like text-embedding-ada-002 or gpt-35-turbo or gpt-4) on Azure OpenAI and have the necessary API keys and endpoints configured.
-Pinecone Index:
+- It is assumed that you have already deployed a model (like text-embedding-ada-002 or gpt-35-turbo or gpt-4) on Azure OpenAI and have the necessary API keys and endpoints configured.
 
-The Pinecone index should be pre-configured with the correct dimensions (e.g., 1536 for text-embedding-ada-002) and metric (e.g., cosine).
-Text Data Format:
+### Pinecone Index:
 
-It is assumed that the text extracted from PDFs and stored in Pinecone is in a consistent format that the topic modeling algorithm can process effectively.
+- The Pinecone index should be pre-configured with the correct dimensions (e.g., 1536 for text-embedding-ada-002) and metric (e.g., cosine).
+
+### Text Data Format:
+
+- It is assumed that the text extracted from PDFs and stored in Pinecone is in a consistent format that the topic modeling algorithm can process effectively.
 
 ## Brief Explanation of Approach and Challenges
-Approach
+
+### Approach
 The project was designed to integrate AI capabilities with modern web development practices, using a microservices architecture. Each component, from the backend processing to the frontend user interface, was built to ensure modularity and scalability.
 
 ### Backend:
@@ -153,7 +156,7 @@ Frontend:
 - The frontend was developed using modern React.js practices, creating a user-friendly interface for both document upload and AI-powered chat functionality.
 The design was inspired by modern chat applications like ChatGPT, focusing on minimalistic and dark-themed aesthetics.
 
-- Python Script:
+### Python Script:
 
 - A Python script was developed to perform topic modeling on the text data stored in Pinecone.
 Latent Dirichlet Allocation (LDA) was employed to uncover underlying topics in the documents, which were then added to the document metadata within Pinecone.
