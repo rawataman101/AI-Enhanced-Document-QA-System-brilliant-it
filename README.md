@@ -180,6 +180,7 @@ Mapping the topics back to the correct vectors in Pinecone posed a challenge due
 Integration of Multiple Components:
 
 - Ensuring smooth communication between the Python-based topic modeling script, the Node.js backend, and the React frontend required careful orchestration. Handling API calls, data processing, and asynchronous operations were key to making the system responsive and reliable.
-Data Consistency:
+
+#### Data Consistency:
 
 - Maintaining consistency between the text data, vector embeddings, and associated metadata in Pinecone required implementing error handling and validation mechanisms to prevent and correct any discrepancies.
